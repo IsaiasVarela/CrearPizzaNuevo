@@ -8,36 +8,50 @@
 
 import UIKit
 
-class VistaQuesos: UIViewController {
-
+class VistaQuesos: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    var quesoDATA = ["Mozzarella", "Cheddar", "Parmesano","Sin Queso"]
     var sigMasas2 : String = " "
     var sigTamanio3 : String = " "
     
     @IBOutlet weak var quesoSeleccionado: UILabel!
-
     @IBOutlet weak var lblMasas2: UILabel!
     @IBOutlet weak var lblTamanioEnQuesos: UILabel!
-
+    @IBOutlet weak var PickerQuesos: UIPickerView!
+    @IBOutlet weak var BtnAvanzar: UIButton!
     
-    @IBAction func selMozarela(sender: UIButton) {
-        self.quesoSeleccionado.text="MOZARELA";
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1;
     }
     
-    @IBAction func selCheddar(sender: UIButton) {
-        self.quesoSeleccionado.text="CHEDDAR";
+    // returns the # of rows in each component..
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return quesoDATA.count
     }
     
-    @IBAction func selParmesano(sender: UIButton) {
-        self.quesoSeleccionado.text="PARMESANO";
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        quesoSeleccionado.text = quesoDATA[row]
+        if BtnAvanzar.enabled == false {
+            BtnAvanzar.enabled = true
+        }
+        
     }
     
-    @IBAction func selSinQueso(sender: UIButton) {
-        self.quesoSeleccionado.text="SIN QUESO";
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return quesoDATA[row]
     }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.PickerQuesos.delegate = self
+        self.PickerQuesos.dataSource = self
+        
+        if quesoSeleccionado.text == "-" {
+            BtnAvanzar.enabled = false
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -48,8 +62,8 @@ class VistaQuesos: UIViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
-        lblMasas2.text = sigMasas2
-        lblTamanioEnQuesos.text = sigTamanio3
+        //lblMasas2.text = sigMasas2
+        //lblTamanioEnQuesos.text = sigTamanio3
 
     lblMasas2.hidden = true
     lblTamanioEnQuesos.hidden = true

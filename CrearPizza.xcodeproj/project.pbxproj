@@ -17,6 +17,10 @@
 		6ACF89381C717B170058B25F /* VistaMasasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF89371C717B170058B25F /* VistaMasasViewController.swift */; };
 		6ACF893A1C7184370058B25F /* VistaQuesos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF89391C7184370058B25F /* VistaQuesos.swift */; };
 		6ACF893C1C718CEF0058B25F /* VistaIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF893B1C718CEF0058B25F /* VistaIngredientes.swift */; };
+		6AEBBD5D1C8FCE7100BBBBA2 /* Online-Pizza-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBD5C1C8FCE7100BBBBA2 /* Online-Pizza-logo.png */; };
+		6AEBBD5F1C8FD39000BBBBA2 /* IconoMasa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBD5E1C8FD39000BBBBA2 /* IconoMasa.png */; };
+		6AEBBD611C8FE1D200BBBBA2 /* Cheese-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBD601C8FE1D200BBBBA2 /* Cheese-icon.png */; };
+		6AEBBD631C92961C00BBBBA2 /* ok-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBD621C92961C00BBBBA2 /* ok-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		6ACF89371C717B170058B25F /* VistaMasasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaMasasViewController.swift; sourceTree = "<group>"; };
 		6ACF89391C7184370058B25F /* VistaQuesos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaQuesos.swift; sourceTree = "<group>"; };
 		6ACF893B1C718CEF0058B25F /* VistaIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaIngredientes.swift; sourceTree = "<group>"; };
+		6AEBBD5C1C8FCE7100BBBBA2 /* Online-Pizza-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Online-Pizza-logo.png"; path = "../../../../../Desktop/Online-Pizza-logo.png"; sourceTree = "<group>"; };
+		6AEBBD5E1C8FD39000BBBBA2 /* IconoMasa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconoMasa.png; path = ../../../../../Desktop/IconoMasa.png; sourceTree = "<group>"; };
+		6AEBBD601C8FE1D200BBBBA2 /* Cheese-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheese-icon.png"; path = "../../../../../Desktop/Cheese-icon.png"; sourceTree = "<group>"; };
+		6AEBBD621C92961C00BBBBA2 /* ok-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ok-icon.png"; path = "../../../../../Desktop/ok-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 		6ACF89341C715E0C0058B25F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6AEBBD5C1C8FCE7100BBBBA2 /* Online-Pizza-logo.png */,
+				6AEBBD621C92961C00BBBBA2 /* ok-icon.png */,
+				6AEBBD5E1C8FD39000BBBBA2 /* IconoMasa.png */,
+				6AEBBD601C8FE1D200BBBBA2 /* Cheese-icon.png */,
 				6ACF89351C715E180058B25F /* Pizza-icon1.png */,
 			);
 			name = images;
@@ -147,7 +159,11 @@
 			files = (
 				6ACF892D1C715CF10058B25F /* LaunchScreen.storyboard in Resources */,
 				6ACF892A1C715CF10058B25F /* Assets.xcassets in Resources */,
+				6AEBBD5D1C8FCE7100BBBBA2 /* Online-Pizza-logo.png in Resources */,
 				6ACF89281C715CF10058B25F /* Main.storyboard in Resources */,
+				6AEBBD611C8FE1D200BBBBA2 /* Cheese-icon.png in Resources */,
+				6AEBBD5F1C8FD39000BBBBA2 /* IconoMasa.png in Resources */,
+				6AEBBD631C92961C00BBBBA2 /* ok-icon.png in Resources */,
 				6ACF89361C715E180058B25F /* Pizza-icon1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

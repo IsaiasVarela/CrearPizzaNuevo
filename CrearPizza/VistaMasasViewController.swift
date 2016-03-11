@@ -8,32 +8,50 @@
 
 import UIKit
 
-class VistaMasasViewController: UIViewController {
+class VistaMasasViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    var masaDATA = ["Gruesa", "Delgada", "Crujiente"]
     var sigTamanio2 :String = " "
     
     @IBOutlet weak var Seleccion1: UILabel!
-    
     @IBOutlet weak var masaSeleccionada: UILabel!
-    
     @IBOutlet weak var tamanio2: UILabel!
-    
-    
-    @IBAction func selMasaDelgada(sender: UIButton) {
-        self.masaSeleccionada.text="DELGADA";
+    @IBOutlet weak var PickerMasa: UIPickerView!
+    @IBOutlet weak var BtnAvanzar: UIButton!
+
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1;
     }
     
-    @IBAction func selMasaCrujiente(sender: UIButton) {
-        self.masaSeleccionada.text="CRUJIENTE";
+    // returns the # of rows in each component..
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return masaDATA.count
     }
     
-    @IBAction func selMasaGruesa(sender: UIButton) {
-        self.masaSeleccionada.text="GRUESA";
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        masaSeleccionada.text = masaDATA[row]
+        if BtnAvanzar.enabled == false {
+            BtnAvanzar.enabled = true
+        }
+
     }
     
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return masaDATA[row]
+    }
+    
+
+     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.PickerMasa.delegate = self
+        self.PickerMasa.dataSource = self
+           masaSeleccionada.hidden = true
+        if masaSeleccionada.text == "-" {
+            BtnAvanzar.enabled = false
+        }
+        
         // Do any additional setup after loading the view.
     }
 
