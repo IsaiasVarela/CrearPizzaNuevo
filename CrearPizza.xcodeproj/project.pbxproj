@@ -74,6 +74,10 @@
 			children = (
 				6ACF89341C715E0C0058B25F /* images */,
 				6ACF89221C715CF10058B25F /* AppDelegate.swift */,
+				6AEBBD5C1C8FCE7100BBBBA2 /* Online-Pizza-logo.png */,
+				6AEBBD601C8FE1D200BBBBA2 /* Cheese-icon.png */,
+				6AEBBD5E1C8FD39000BBBBA2 /* IconoMasa.png */,
+				6AEBBD621C92961C00BBBBA2 /* ok-icon.png */,
 				6ACF89241C715CF10058B25F /* ViewController.swift */,
 				6ACF89261C715CF10058B25F /* Main.storyboard */,
 				6A9357DA1C8AB44B0023B968 /* VistaConfirmacion.swift */,
@@ -90,10 +94,6 @@
 		6ACF89341C715E0C0058B25F /* images */ = {
 			isa = PBXGroup;
 			children = (
-				6AEBBD5C1C8FCE7100BBBBA2 /* Online-Pizza-logo.png */,
-				6AEBBD621C92961C00BBBBA2 /* ok-icon.png */,
-				6AEBBD5E1C8FD39000BBBBA2 /* IconoMasa.png */,
-				6AEBBD601C8FE1D200BBBBA2 /* Cheese-icon.png */,
 				6ACF89351C715E180058B25F /* Pizza-icon1.png */,
 			);
 			name = images;
