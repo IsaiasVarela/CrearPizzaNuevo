@@ -25,7 +25,7 @@ class VistaIngredientes: UIViewController {
     @IBOutlet weak var SwitchAceituna: UISwitch!
     @IBOutlet weak var SwitchSalchicha: UISwitch!
     @IBOutlet weak var SwitchPepperoni: UISwitch!
-    
+   
     @IBOutlet weak var lblAdvertencia: UILabel!
     @IBOutlet weak var btnConfirmar: UIButton!
     
@@ -36,14 +36,16 @@ class VistaIngredientes: UIViewController {
  
     func agregarIngredientes() ->String {
         
-        if SwitchPinia.on == true { ingSelec = ingSelec + "Piña, " }
-        if SwitchPavo.on == true { ingSelec = ingSelec + "Pavo, " }
-        if SwitchJamon.on == true { ingSelec = ingSelec + "Jamon, " }
-        if SwitchCebolla.on == true { ingSelec = ingSelec + "Cebolla, " }
-        if SwitchPimiento.on == true { ingSelec = ingSelec + "Pimiento, " }
-        if SwitchAceituna.on == true { ingSelec = ingSelec + "Aceituna, "}
-        if SwitchSalchicha == true { ingSelec = ingSelec + "Salchicha, " }
-        if SwitchPepperoni.on == true { ingSelec = ingSelec + "Pepperoni, " }
+        ingSelec = ""
+        
+        if SwitchPinia.on == true { ingSelec = ingSelec + " Piña, " }
+        if SwitchPavo.on == true { ingSelec = ingSelec + " Pavo, " }
+        if SwitchJamon.on == true { ingSelec = ingSelec + " Jamon, " }
+        if SwitchCebolla.on == true { ingSelec = ingSelec + " Cebolla, " }
+        if SwitchPimiento.on == true { ingSelec = ingSelec + " Pimiento, " }
+        if SwitchAceituna.on == true { ingSelec = ingSelec + " Aceituna, "}
+        if SwitchSalchicha.on == true { ingSelec = ingSelec + " Salchicha, " }
+        if SwitchPepperoni.on == true { ingSelec = ingSelec + " Pepperoni, " }
       
         return ingSelec
     }
@@ -235,6 +237,7 @@ class VistaIngredientes: UIViewController {
         
         
         let sigvista = segue.destinationViewController as! VistaConfirmacion
+        sigvista.sigIngredientes1 = " "
         sigvista.sigIngredientes1 = "Ingredientes: " + agregarIngredientes()
         sigvista.sigQueso1 = sigQueso
         sigvista.sigMasa1 = "Masa: " + sigMasa3

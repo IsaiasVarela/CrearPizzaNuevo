@@ -67,6 +67,7 @@ class VistaQuesos: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
 
     lblMasas2.hidden = true
     lblTamanioEnQuesos.hidden = true
+    quesoSeleccionado.hidden = true
         
     }
 
