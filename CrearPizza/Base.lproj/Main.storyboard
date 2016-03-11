@@ -603,7 +603,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ok-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-FH-oiM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ok-icon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-FH-oiM">
                                 <rect key="frame" x="161" y="80" width="114" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="bKT-XJ-L8f"/>
@@ -731,6 +731,6 @@
         <image name="IconoMasa.png" width="200" height="200"/>
         <image name="Online-Pizza-logo.png" width="325" height="260"/>
         <image name="Pizza-icon1.png" width="256" height="256"/>
-        <image name="ok-icon.png" width="256" height="256"/>
+        <image name="ok-icon1.png" width="256" height="256"/>
     </resources>
 </document>

@@ -20,6 +20,7 @@
 		6AEBBDC11C92B2F500BBBBA2 /* Cheese-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBDBE1C92B2F500BBBBA2 /* Cheese-icon.png */; };
 		6AEBBDC21C92B2F500BBBBA2 /* IconoMasa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBDBF1C92B2F500BBBBA2 /* IconoMasa.png */; };
 		6AEBBDC31C92B2F500BBBBA2 /* Online-Pizza-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBDC01C92B2F500BBBBA2 /* Online-Pizza-logo.png */; };
+		6AEBBDC51C92B4A300BBBBA2 /* ok-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AEBBDC41C92B4A300BBBBA2 /* ok-icon1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6AEBBDBE1C92B2F500BBBBA2 /* Cheese-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cheese-icon.png"; sourceTree = "<group>"; };
 		6AEBBDBF1C92B2F500BBBBA2 /* IconoMasa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoMasa.png; sourceTree = "<group>"; };
 		6AEBBDC01C92B2F500BBBBA2 /* Online-Pizza-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Online-Pizza-logo.png"; sourceTree = "<group>"; };
+		6AEBBDC41C92B4A300BBBBA2 /* ok-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-icon1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		6ACF89341C715E0C0058B25F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6AEBBDC41C92B4A300BBBBA2 /* ok-icon1.png */,
 				6AEBBDBE1C92B2F500BBBBA2 /* Cheese-icon.png */,
 				6AEBBDBF1C92B2F500BBBBA2 /* IconoMasa.png */,
 				6AEBBDC01C92B2F500BBBBA2 /* Online-Pizza-logo.png */,
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEBBDC51C92B4A300BBBBA2 /* ok-icon1.png in Resources */,
 				6ACF892D1C715CF10058B25F /* LaunchScreen.storyboard in Resources */,
 				6AEBBDC11C92B2F500BBBBA2 /* Cheese-icon.png in Resources */,
 				6ACF892A1C715CF10058B25F /* Assets.xcassets in Resources */,
